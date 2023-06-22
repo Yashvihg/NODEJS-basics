@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <h1>served from express!!</h1>
+    </header>
+    <main class="container">
+      <!-- we use form action when we synchronously send the data.  -->
+      <div class="row justify-content-center">
+        <div class="col-md-4 border border-2">
+          <h3>Add new product</h3>
+          <form onsubmit="AddNewCourse(event)">
+            <div class="col md-4"><label for="c1">Course ID : </label></div>
+            <input type="text" id="course-id" name="course-id" />
+            <div class="col md-4"><label for="c2">Course Name : </label></div>
+            <input type="text" id="course-name" name="course-name" />
+            <div class="col md-4">
+              <button type="submit" class="mt-2 mb-2">
+                Add new Products -->
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <ul class="CourseList"></ul>
+    </main>
+  </body>
+</html>
